@@ -12,42 +12,6 @@
           <img src="./assets/profile.jpg" alt="Portrait of Jerôme" class="profile-image" />
         </div>
       </section>
-
-      <section id="projects">
-        <h2>Projects</h2>
-        <div class="project">
-          <h3>Path to Mastery <span class="private-label">(Private)</span></h3>
-          <p>
-            The digital reflection of my journey—building a life guided by principles of discipline, authenticity, and
-            deliberate practice.
-          </p>
-          <span class="tech">Vue.js</span>
-        </div>
-
-        <div class="project">
-          <h3>Financial Health Scorecard Dashboard</h3>
-          <p>
-            People often don’t know where they stand financially and rely on basic tools like spreadsheets or banking
-            apps for a fragmented view.
-          </p>
-          <span class="tech">Python, and React</span>
-        </div>
-
-        <div class="project">
-          <h3>Google Calendar API Python Project</h3>
-          <p>
-            A project integrating Google Calendar API to automate scheduling and reminders.
-          </p>
-          <span class="tech">Python</span>
-        </div>
-      </section>
-
-      <section id="contact">
-        <h2>Contact</h2>
-        <p>
-          Email: <a href="mailto:mapacherama@gmail.com">mapacherama@gmail.com</a>
-        </p>
-      </section>
     </main>
     <Footer />
   </div>
