@@ -5,9 +5,9 @@
     <Header :isDark="isDark" @toggleDarkMode="toggleDarkMode" />
     <main>
       <section id="about">
-        <h2>About Me</h2>
+        <h2>I am Jerôme.</h2>
         <p>
-          Here, you share the essence of your journey—the passion, the perseverance, and the mastery in the making.
+          Fullstack developer, and passionate about technology.
         </p>
       </section>
 
@@ -34,7 +34,7 @@
 </template>
 
 <script setup>
-import { ref } from 'vue';
+import { ref, watchEffect } from 'vue';
 import Header from './components/Header.vue';
 import Footer from './components/Footer.vue';
 
@@ -44,6 +44,15 @@ const isDark = ref(false);
 function toggleDarkMode() {
   isDark.value = !isDark.value;
 }
+
+// Watch for changes in dark mode and apply to body element
+watchEffect(() => {
+  if (isDark.value) {
+    document.body.classList.add('dark');
+  } else {
+    document.body.classList.remove('dark');
+  }
+});
 </script>
 
 <style>
@@ -53,10 +62,11 @@ body {
   margin: 0;
   padding: 0;
   line-height: 1.6;
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition */
 }
 
 /* Light mode (default) styling */
-#app {
+body {
   background-color: #fdfdfd;
   color: #333;
 }
@@ -78,21 +88,36 @@ section {
   border-radius: 4px;
 }
 
-/* Dark mode overrides */
-.dark {
+/* Dark mode styling applied to body */
+body.dark {
   background-color: #121212;
   color: #fdfdfd;
 }
 
-.dark header {
-  background-color: #1e1e1e;
+/* Ensure all sections maintain readability */
+.dark section {
+  background-color: transparent;
 }
 
 .dark .project {
-  border-color: #444;
+  background-color: #1e1e1e;
+  border: 1px solid #444;
+  color: #ffffff;
+}
+
+.dark .project h3 {
+  color: #f8f8f8;
+}
+
+.dark .project p {
+  color: #d1d1d1;
 }
 
 .dark a {
   color: #bb86fc;
+}
+
+.dark header {
+  background-color: #1e1e1e;
 }
 </style>
