@@ -1,6 +1,5 @@
 <template>
     <div id="app" :class="{ dark: isDark }">
-      <Header :isDark="isDark" @toggleDarkMode="toggleDarkMode" />
       <main>
         <section id="about">
           <h1 class="title">Hi, I'm Jerôme, Fullstack Developer.</h1>
