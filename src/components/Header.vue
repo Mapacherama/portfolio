@@ -1,6 +1,6 @@
 <template>
     <header :class="{ dark: isDark }">
-      <h1>My Portfolio</h1>
+        <h1><a href="/" class="subtle-link">My Portfolio</a></h1>
       <nav>
         <ul>
           <li><a href="/projects">Projects</a></li>
@@ -95,6 +95,17 @@
     color: #ecf0f1;
     text-decoration: none;
   }
+
+  .subtle-link {
+  text-decoration: none;
+  color: inherit;
+  font-weight: bold;
+  transition: opacity 0.3s;
+}
+
+.subtle-link:hover {
+  opacity: 0.7;
+}
   
   /* Social links styling */
   .social-links {
