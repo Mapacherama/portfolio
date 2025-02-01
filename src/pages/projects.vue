@@ -24,7 +24,7 @@ const projects = [
             "The digital reflection of my journey—building a life guided by principles of discipline, authenticity, and deliberate practice.",
         tech: "Vue.js",
         private: true,
-        link: "https://github.com/yourusername/path-to-mastery"
+        link: "https://path-to-mastery-7r8kvm5kd-mapacheramas-projects.vercel.app"
     },
     {
         id: 2,
@@ -42,7 +42,7 @@ const projects = [
             "A project integrating Google Calendar API to automate scheduling and reminders.",
         tech: "Python",
         private: false,
-        link: "https://github.com/yourusername/google-calendar-api-python-project"
+        link: "https://github.com/Mapacherama/Google-Calendar-API-Python-Project"
     }
 ];
 </script>
