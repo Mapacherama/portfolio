@@ -13,15 +13,11 @@
   
   <style scoped>
   footer {
-    background-color: #ecf0f1;
+    background-color: #1e1e1e;
+    color: #fdfdfd;
     text-align: center;
     padding: 10px;
     font-size: 0.9em;
     transition: background-color 0.3s, color 0.3s;
-  }
-
-  .dark footer {
-    background-color: #1e1e1e;
-    color: #fdfdfd;
   }
   </style>

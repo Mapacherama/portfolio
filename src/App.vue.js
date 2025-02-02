@@ -1,4 +1,5 @@
 "use strict";
+/// <reference types="../node_modules/.vue-global-types/vue_3.5_false.d.ts" />
 var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
     if (k2 === undefined) k2 = k;
     var desc = Object.getOwnPropertyDescriptor(m, k);

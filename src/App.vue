@@ -2,7 +2,7 @@
 <template>
   <v-app>
     <v-main>
-      <router-view />
+      <HomePage />
     </v-main>
     <AppFooter />
   </v-app>
@@ -10,4 +10,5 @@
 
 <script setup lang="ts">
 import AppFooter from './components/AppFooter.vue';
+import HomePage from './pages/HomePage.vue';
 </script>
