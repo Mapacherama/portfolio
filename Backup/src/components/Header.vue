@@ -49,27 +49,10 @@
           </svg>
         </a>
       </div>
-      <!-- Dark mode toggle button -->
-      <button class="dark-mode-toggle" @click="toggleDarkMode">
-        <span v-if="isDark">🌞</span>
-        <span v-else>🌙</span>
-      </button>
     </header>
   </template>
   
   <script setup>
-  const props = defineProps({
-    isDark: {
-      type: Boolean,
-      default: false,
-    },
-  });
-  
-  const emit = defineEmits(['toggleDarkMode']);
-  
-  function toggleDarkMode() {
-    emit('toggleDarkMode');
-  }
   </script>
   
   <style scoped>
@@ -124,17 +107,6 @@
   
   .social-links a:hover {
     color: #f39c12;
-  }
-  
-  /* Style for the dark mode toggle button */
-  .dark-mode-toggle {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    background: none;
-    border: none;
-    font-size: 1.5rem;
-    cursor: pointer;
   }
   </style>
   
