@@ -1,7 +1,7 @@
 // src/plugins/index.ts
 
-import vuetify from './vuetify.ts';
-import pinia from '../stores/index.ts';
+import vuetify from './vuetify';
+import pinia from '../stores/index';
 
 import type { App } from 'vue';
 

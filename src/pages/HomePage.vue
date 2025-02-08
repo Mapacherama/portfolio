@@ -248,4 +248,16 @@ onMounted(fetchProjects);
   color: #bbbbbb;
   margin-top: 5px;
 }
+
+@media screen and (max-width: 600px) {
+  .social-icons {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .social-link {
+    font-size: 1rem;
+    padding: 8px 12px;
+  }
+}
 </style>
